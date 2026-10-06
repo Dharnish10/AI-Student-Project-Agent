@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Student Project Agent</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🎓 AI Student Project Agent</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#agent">Project Agent</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>AI Student Project Agent</h1>
+
+            <p>
+                Your smart assistant for creating college project ideas,
+                objectives, modules, technologies and viva questions.
+            </p>
+
+            <button onclick="scrollToAgent()">
+                Start Project
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section id="agent" class="agent-section">
+
+        <h2>🚀 Create Your Project</h2>
+
+        <p class="subtitle">
+            Enter your project requirements below.
+        </p>
+
+        <div class="project-form">
+
+            <label>Project Domain</label>
+
+            <select id="domain">
+
+                <option value="">Select Domain</option>
+                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                <option value="Machine Learning">Machine Learning</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Cyber Security">Cyber Security</option>
+                <option value="IoT">Internet of Things</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Mobile Application">Mobile Application</option>
+
+            </select>
+
+
+            <label>Project Type</label>
+
+            <select id="projectType">
+
+                <option value="">Select Project Type</option>
+                <option value="Mini Project">Mini Project</option>
+                <option value="Final Year Project">Final Year Project</option>
+                <option value="Research Project">Research Project</option>
+
+            </select>
+
+
+            <label>Project Requirement</label>
+
+            <textarea
+                id="requirement"
+                placeholder="Example: I need an AI project for college students..."
+            ></textarea>
+
+
+            <button onclick="generateProject()">
+                🤖 Generate Project
+            </button>
+
+        </div>
+
+
+        <div id="result" class="result">
+
+            <h2>Your Project Will Appear Here</h2>
+
+            <p>
+                Enter your requirements and click
+                <b>Generate Project</b>.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section id="about" class="about">
+
+        <h2>About AI Student Project Agent</h2>
+
+        <p>
+            AI Student Project Agent is a student-focused project assistant
+            designed to help students plan and organize academic projects.
+            It provides project ideas, objectives, modules, technologies,
+            development plans and viva questions.
+        </p>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 AI Student Project Agent
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
